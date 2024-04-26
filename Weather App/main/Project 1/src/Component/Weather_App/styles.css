@@ -1,0 +1,106 @@
+/* Wrapper styling */
+.main {
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  position: relative; /* For good measure and potential absolute children */
+}
+
+/* General container styling */
+.container {
+  position: relative;
+  width: 50%; /* More fluid width */
+  max-width: 1000px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+}
+
+/* Top navigation bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #a6d8fc;
+}
+
+.cityInput {
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  flex-grow: 1; /* Takes available space */
+}
+
+.searchIcon {
+  margin-left: 10px; /* Ensures some spacing between input and icon */
+}
+
+.searchIcon img {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Weather icons and text sections */
+.weather-image img,
+.element .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.Weather-location {
+  text-align: center;
+  padding: auto;
+  font-size: 3em;
+}
+
+.country {
+  margin-top: 10px;
+  background-color: rgb(255, 255, 131);
+  border-radius: 40px;
+}
+
+.Weather-temp,
+.Humidity-percentage,
+.Wind-speed {
+  text-align: center;
+  padding: 5px;
+  font-size: 1.2em; /* Uniform font size for simplicity */
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #e0e0e0;
+  margin-top: 10px;
+}
+
+.element .data {
+  padding-left: 15px;
+}
+
+.text {
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+  }
+
+  .cityInput,
+  .searchIcon {
+    width: 100%; /* Full width for smaller devices */
+    margin-bottom: 10px; /* Spacing after each item */
+  }
+
+  .searchIcon {
+    margin-left: 0; /* Reset left margin for mobile */
+  }
+}
